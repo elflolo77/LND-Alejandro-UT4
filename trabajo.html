@@ -2,106 +2,39 @@
 <html lang="en">
 
 <head>
-    <style>
-        body {
-            max-height: 400px;
-        }
-
-        .container-video {
-            width: auto;
-            height: 450px;
-            overflow: hidden;
-            position: relative;
-        }
-
-        .container-video video {
-            object-fit: cover;
-            position: absolute;
-            width: 100%;
-            height: 100%;
-        }
-
-        .container-video div {
-            position: absolute;
-            text-align: center;
-            bottom: 100px;
-            width: 100%;
-        }
-
-        .titulo {
-            color: white;
-        }
-
-        .parrafotitulo {
-            background-color: black;
-            margin: 30px;
-            opacity: 0.2;
-            color: white;
-        }
-
-        .boton {
-            background-color: skyblue;
-            font-size: 1.5em;
-            border: 1px solid black;
-            width: 150px;
-            font-family: Arial, Helvetica, sans-serif;
-
-        }
-
-        .boton:hover {
-            background-color: orange;
-            color: whithe;
-        }
-
-        #encabezado {
-            padding-bottom: 4, 5rem;
-        }
-
-        #enlaces {
-            padding-right: 18px;
-            padding-left: 18px;
-            font-size: 1.2rem;
-        }
-
-
-        .parrafotitulo {
-            background-color: black;
-            margin: 30px;
-            color: #F6EB0A;
-        }
-
-        .titulo {
-            color: #F6EB0A;
-        }
-    </style>
+    <script src="https://kit.fontawesome.com/9856045ac1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/trabajo lnd/css/style.css">
     <title>Centro turismo Gran Canaria</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-</head>
+        <!--PALETA DE COLORES https://colorhunt.co/palette/f6e1c3e9a178a844487a3e65 -->
+
+    </head>
 
 <body>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
-    <header id="title" style="background-color:#FAF8F8;">
+    <header id="title" style="background-color:#F6E1C3;">
         <div class="container-fluid">
             <nav id="encabezado" class="navbar-expand-sm navbar">
                 <a class="navbar-brand" id="ubuntu" style="font-family: Ubuntu;"
-                    href="https://naturalfrank.com/bienvenidos/">Centro turistico </a>
+                    href="/trabajo lnd/trabajo.html">Centro turistico </a>
                 <button type="button" class="navbar-toggler" data-bs-target="#caja" data-bs-toggle="collapse"
                     aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation"><span
                         class="navbar-toggler-icon"></span> </button>
                 <div id="caja" class="collapse navbar-collapse">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item" id="enlaces"> <a href="#galeria" class="nav-link"></i>galeria</li>
+                        <li class="nav-item" id="enlaces"><a href="#inicios" class="nav-link"><i class="fa-solid fa-tree"></i>inicios
+                        </li></a>
+                        <li class="nav-item" id="enlaces"> <a href="#galeria" class="nav-link"> <i class="fa-solid fa-shirt"></i> galeria</li>
                         </a>
-                        <li class="nav-item" id="enlaces"><a href="#población" class="nav-link">población
+                        <li class="nav-item" id="enlaces"><a href="#ubicación" class="nav-link"><i class="fa-solid fa-map-location"></i>ubicación
                         </li></a>
-                        <li class="nav-item" id="enlaces"><a href="#camisetas" class="nav-link">camisetas
+                        <li class="nav-item" id="enlaces"><a href="#camisetas" class="nav-link"><i class="fa-solid fa-shirt"></i>camisetas
                         </li></a>
-                        <li class="nav-item" id="enlaces"><a href="#contacto" class="nav-link">camisetas
-                        </li></a>
+
                     </ul>
                 </div>
             </nav>
@@ -109,7 +42,7 @@
             <header>
                 <div class="row">
                     <div class="col-md-6 col-sm-12">
-                        <h1 id="eslogan">Proteger el medio ambiente es protegerte a ti <img src="panda.png"
+                        <h1 id="eslogan">Proteger el medio ambiente es protegerte a ti <img src="/trabajo lnd/imagenes/panda.png"
                                 height="60px" width="60px"></h1>
                         <div class="col-md-6 col-sm-12">
 
@@ -144,11 +77,42 @@
 
                     </div>
                 </div>
-
-
             </header>
 
+        </div>
+    </header>
 
+    <div class="galeria" id="galeria">
+
+        <h3>GALERIA</h3>
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                    <img src="imagenes/imagen1.jpg" class="carouselimagenes w-50" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="imagenes/imagen2.jpg" class="carouselimagenes w-50" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="imagenes/imagen3.jpg" class=" carouselimagenes w-50" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+
+
+    </div>
 </body>
 
 </html>
